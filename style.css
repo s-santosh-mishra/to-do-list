@@ -62,8 +62,6 @@ button:hover i {
     width: 500px;
     border: 2px soild transparent;
     margin: auto;
-    /* margin-top: 50px; */
-    /* overflow: auto; */
     overflow: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -130,5 +128,58 @@ button:hover i {
 
 .checked {
     text-decoration: line-through;
+}
+
+@media screen and (max-width: 479px) {
+    body {
+    background-image: url(background2.jpg);
+    font-size: 30px;
+}
+
+.parent {
+    height: 100%;
+    width:95%;
+    font-size: 26px;
+    margin: auto;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.task{ 
+    font-size: 18px;
+}
+
+button{
+    display: block;
+    height: 25px;
+    width: 25px;
+}
+
+.in_bt{
+    flex-shrink: 0;
+}
+i{
+    font-size: 17px;;
+}
+#top{
+    font-size: 20px;
+    margin-inline: 15px;
+    margin-bottom: 0;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+#task_select{
+    display: flex;
+    width: 80%;
+    overflow-x: none;
+    
+}
+.contt{
+    overflow-x:hidden;
+}
+
 }
 

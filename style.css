@@ -9,10 +9,8 @@
 
 
 body {
-    /* height: 100vh; */
     background-image: url(background.jpg);
     background-attachment: scroll;
-    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;  
     font-size: 35px;
@@ -21,6 +19,7 @@ body {
 
 h1 {
     text-align: center;
+    margin-top:10px;
     padding-top: 20px;
     color: rgb(18, 18, 18);
     font-family: "Dancing Script", cursive;
@@ -105,7 +104,6 @@ button:hover i {
     align-items: center;
     color: rgb(18, 18, 18);
     margin-inline: 20px;
-    /* margin:5px; */
     font-size: 28px;
 }
 
@@ -139,11 +137,34 @@ button:hover i {
     overflow-x:hidden;
 }
 
+.in_bt{
+    flex-shrink: 0;
+}
+
+@media only screen and (max-width: 1440px) {
+    body{
+        background-image:url("background3.jpg");
+    }
+
+    .parent {
+    height: 100%;
+    width:55%;
+    font-size: 26px;
+    margin: auto;
+}
+
+#bt3{
+    margin-block: 20px;
+}
+h1 {
+    font-size: 60px;
+}
+}
+
 @media screen and (max-width: 991px) {
     body {
     background-image: url(background2.jpg);
     background-repeat: repeat;
-    background-size: cover;
     font-size: 30px;
 }
 
@@ -152,34 +173,19 @@ button:hover i {
     width:80%;
     font-size: 26px;
     margin: auto;
-    overflow: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
 }
 
-#bt3{
-    margin-block: 20px;
+h1 {
+    font-size: 50px;
 }
+
 }
 
 
 @media screen and (max-width: 479px) {
-    /* body {
-    background-image: url(background2.jpg);
-    background-repeat: repeat;
-    background-size: cover;
-    font-size: 30px;
-} */
-
-/* .parent {
-    height: 100%;
-    width:90%;
-    font-size: 26px;
-    margin: auto;
-    overflow: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-} */
+h1 {
+    font-size: 40px;
+}
 
 .task{ 
     font-size: 18px;
@@ -191,9 +197,6 @@ button{
     width: 25px;
 }
 
-/* .in_bt{
-    flex-shrink: 0;
-} */
 
 i{
     font-size: 17px;;
@@ -203,18 +206,6 @@ i{
     margin-inline: 15px;
     margin-bottom: 0;
 }
-/* .head{
-    display: flex;
-    justify-content: space-between;
-}
-#task_select{
-    display: flex;
-    width: 80%;
-    
-} */
-/* .contt{
-    overflow-x:hidden;
-} */
 
 }
 

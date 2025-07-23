@@ -186,6 +186,9 @@ h1 {
 h1 {
     font-size: 40px;
 }
+.parent {
+    width:90%;
+}
 
 .task{ 
     font-size: 18px;

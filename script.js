@@ -61,8 +61,8 @@ add.addEventListener("click", () => {
 
 inp.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
-        event.preventDefault(); // Prevent form submission or newline
-        add.click(); // Simulate click on the Add button
+        event.preventDefault();
+        add.click();
     }
 });
 
